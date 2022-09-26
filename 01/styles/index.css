@@ -47,8 +47,7 @@ button {
   border-radius: 8px;
   background-color:#006399;
   color: #cde5ff;
-  font-size: 1rem;
-  font-family: 'Nanum Pen Script', cursive;
+  font-size: 1rem; 
 }
 
 button:hover, button:active {
