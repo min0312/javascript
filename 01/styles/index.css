@@ -23,6 +23,7 @@ header > h1 {
 main {
   height: 90vh; 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -32,6 +33,27 @@ main > section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 2vh;
+}
+
+
+
+/*
+#msg {
+  display: none;
+}
+*/
+
+.divMsg {
+  display: inline-block;
+  width: 100%;
+  margin: 1vh;
+  width: 50vw;
+  height: 15vw; 
+  border: none; 
+  background-color:#cde5ff; 
+  color : #006399 ;
+  font-size: 1rem; 
 }
 
 /*버튼*/
