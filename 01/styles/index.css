@@ -30,6 +30,7 @@ main {
 
 main > section {
   display: flex;
+  width : 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -46,14 +47,7 @@ main > section {
 
 .divMsg {
   display: inline-block;
-  width: 100%;
   margin: 1vh;
-  width: 50vw;
-  height: 15vw; 
-  border: none; 
-  background-color:#cde5ff; 
-  color : #006399 ;
-  font-size: 1rem; 
 }
 
 /*버튼*/

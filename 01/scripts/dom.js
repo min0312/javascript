@@ -7,17 +7,26 @@
 const show = () => {
   //1. 태그만들기
   let tag = "";
-  for(let i=1; i <= 3; i++) { 
+  /*
+  for(let i=1; i <= 6; i++) { 
     //tag = tag + '<div class="divMsg">' + i + '</div>' ;
     //템플릿문자열
-    tag = tag + `<div class="divMsg">${i}</div>`
+    tag = tag + `<div class="divMsg"><img src="./images/${i}.png" id="msdImgId${i}"></div>`
   }
+  */
+
+  let i = Math.floor(Math.random() * 6) + 1;
+  tag = `<div class="divMsg"><img src="./images/${i}.png" id="msgImg"></div>`
   console.log(tag);
 
   //2.DOM에서 태그를 넣을 요소 선택
-  const msgDiv = document.querySelector('#msg')
+  const msgDiv = document.querySelector('#msg');
 
   //3.선택된 요소의 HTML 변경
-  msgDiv.innerHTML = tag
+  msgDiv.innerHTML = tag;
   
+  //4.동적으로 생성된 HTML요소도 스타일 변경 가능
+  let msgImg = document.querySelector('#msgImg') 
+  msgImg.style.maxWidth = "100px" ;
+  msgImg.style.maxheight = "100px" ;
 }
