@@ -21,6 +21,7 @@ const show = () => {
 
   //2.DOM에서 태그를 넣을 요소 선택
   const msgDiv = document.querySelector('#msg');
+  
 
   //3.선택된 요소의 HTML 변경
   msgDiv.innerHTML = tag;
@@ -29,4 +30,16 @@ const show = () => {
   let msgImg = document.querySelector('#msgImg') 
   msgImg.style.maxWidth = "100px" ;
   msgImg.style.maxheight = "100px" ;
+
+  //폼 보이기
+  const formSection = document.querySelector('#formSection');
+  formSection.style.display = "block" ;
 }
+
+//DOM 생성되면
+document.addEventListener("DOMContentLoaded", ()=>{
+   //폼 숨기기
+   const formSection = document.querySelector('#formSection');
+   formSection.style.display = "none" ;
+ 
+});
