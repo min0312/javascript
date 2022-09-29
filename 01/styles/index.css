@@ -47,16 +47,12 @@ button {
   cursor: pointer;
 }
 
-button:active {
+button:active, button:hover {
   background-color: blue;
 }
 
 /*radio*/
 /* Labels for checked inputs */
-input:checked + label {
-  color: red;
-}
-
 /* Radio element, when checked */
 input[type="radio"] {
   display: none;
