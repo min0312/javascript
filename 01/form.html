@@ -39,11 +39,11 @@
     </header>
     <main id="content">
       <section id="inNum">
-        <form name="form1" id="form1">
+        <form name="form1" id="form1" action="a.html">
         <input type="txet" name="txt1" id="txt1">
         <select id="sel1" name="sel1">
           <option value="1">사과</option>
-          <option value="2">바나나</option>
+          <option value="2" selected>바나나</option>
           <option value="3">딸기</option>
         </select>
         <fieldset>
@@ -57,6 +57,7 @@
         </fieldset>
         <input type="button" onclick="show(1);" value="확인1">
         <input type="button" onclick="show(2);" value="확인2">
+        <input type="submit" value="전송">
         </form>
       </section>
     </main>
